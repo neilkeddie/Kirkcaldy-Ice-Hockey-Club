@@ -1,0 +1,295 @@
+
+
+
+/*-----------------------Front Page----*/
+
+.container-fluid {
+    padding-right: 0;
+    padding-left: 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+.front-page {
+    background: linear-gradient(to left, rgba(0, 0, 128, 0.8), rgba(0, 0, 128, 0.8)), url("/images/KIHC-home.png");
+    background-size: cover;
+    background-position: center center;
+    height: 800px;
+    margin: auto;
+    padding: 0;
+    text-align: center;
+}
+
+.logo {
+    margin-top: 200px;
+}
+
+.front-page p {
+    color: #fff;
+}
+
+/*-----------------------------Background------*/
+
+body {
+    background-image: url('/images/ice.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/*----------------------------Header-----*/
+
+.main-wrap {
+    background-color: #000080;
+    padding-left: 0;
+    padding-right: 0;
+}
+.navbar, .home-bar, .navbar-header {
+    min-height: 100px;
+}
+
+.nav li a, .dropdown-menu>li>a:hover{
+    color: #fafafa;
+}
+
+.navbar-brand {
+    width: 200px;
+    padding-top: 10px;
+}
+
+.navbar-header img { 
+    width: 100%;
+}
+
+.navbar-toggle {
+    background-color: #000080;
+    border-color: #fafafa;
+}
+
+.nav-below {
+    background-color: #ffff4d;
+    height: 10px;
+}
+
+.nav>li>a:focus, .nav>li>a:hover, .nav .open>a, .nav .open>a:focus, .nav .open>a:hover, .dropdown-menu>li>a:hover {
+    background-color: #000050;
+}
+
+.dropdown-menu, .dropdown-menu:hover {
+    background-color: #000080;
+}
+
+.icon-bar {
+    background-color: #fafafa;
+}
+
+/*--------------------------------Carousel--*/
+
+.home {
+    height: 400px;
+}
+
+.carousel-inner {
+    margin: 0;
+    padding: 0;
+    height: 600px;
+    width: 100%;
+}
+
+.carousel-inner .image1 {
+    background-image: url('../images/Game-action1.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+}
+.carousel-inner .image2 {
+    background-image:  url('../images/Game-action2.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+}
+.carousel-inner .image3 {
+    background-image: url('../images/Game-action3.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+}
+.carousel-inner .image4 {
+    background-image: url('../images/Game-action4.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+}
+.carousel-inner .image5 {
+    background-image: url('../images/Game-action5.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+}
+.carousel-inner .image6 {
+    background-image:  url('../images/Game-action6.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+}
+.carousel-inner .image7 {
+    background-image: url('../images/Game-action7.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+}
+.carousel-inner .image8 {
+    background-image: url('../images/Game-action8.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+}
+.carousel-inner .image9 {
+    background-image: url('../images/Game-action9.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+}
+.carousel-inner .image10 {
+    background-image:  url('../images/Game-action10.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+}
+.carousel-inner .image11 {
+    background-image: url('../images/Game-action11.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+}
+.carousel-inner .image12 {
+    background-image: url('../images/Game-action12.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+}
+.carousel-inner .image13 {
+    background-image: url('../images/Game-action13.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+}
+.carousel-inner .image14 {
+    background-image:  url('../images/Game-action14.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+}
+.carousel-inner .image15 {
+    background-image: url('../images/Game-action15.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+}
+
+/*----------------------------Footer-----*/
+
+.footer {
+    color: #fafafa;
+    text-align: center;
+}
+
+.footer-left {
+    position: relative;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.footer-left::after{
+    content: '';
+    position: absolute;
+    display: block;
+    border-left: 1px solid #fafafa;
+    height: 50%;
+    bottom: 25%;
+}
+
+.footer-section {
+    min-height: 250px;
+}
+
+.game {
+    margin: auto;
+    width: 90%;
+}
+
+/*--------------------------------Teams---*/
+
+.teams {
+    background-color: #fafafa;
+}
+
+.team-logo{
+    width: 50%;
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+}
+
+.team-photo {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/*----------------------------Media Queries-----*/
+
+@media (max-width: 992px) {
+    .logo img {
+        height: 50%;
+        width: 50%;
+    }
+    
+    .footer-left::after {
+        content: '';
+        position: absolute;
+        display: inline;
+        top: 0;
+        border-top: 1px solid #fafafa;
+        border-left: none;
+        width: 50%;
+        left: 25%;
+}
+    .game {
+    margin: auto;
+    width: 60%;
+}
+
+    
+}
+
