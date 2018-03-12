@@ -52,6 +52,10 @@ body {
     color: #fafafa;
 }
 
+.nav>li>a {
+   padding: 10px 10px;
+}
+
 .navbar-brand {
     width: 200px;
     padding-top: 10px;
@@ -96,126 +100,78 @@ body {
     width: 100%;
 }
 
-.carousel-inner .image1 {
-    background-image: url('../images/Game-action1.jpg');
+.carousel-inner .item {
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
     height: 100%;
-    width: 100%;
+}
+
+.carousel-inner .image1 {
+    background-image: url('../images/Game-action1.jpg');
 }
 .carousel-inner .image2 {
     background-image:  url('../images/Game-action2.jpg');
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    height: 100%;
-    width: 100%;
 }
 .carousel-inner .image3 {
     background-image: url('../images/Game-action3.jpg');
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    height: 100%;
-    width: 100%;
 }
 .carousel-inner .image4 {
     background-image: url('../images/Game-action4.jpg');
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    height: 100%;
-    width: 100%;
 }
 .carousel-inner .image5 {
     background-image: url('../images/Game-action5.jpg');
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    height: 100%;
-    width: 100%;
 }
 .carousel-inner .image6 {
     background-image:  url('../images/Game-action6.jpg');
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    height: 100%;
-    width: 100%;
 }
 .carousel-inner .image7 {
     background-image: url('../images/Game-action7.jpg');
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    height: 100%;
-    width: 100%;
 }
 .carousel-inner .image8 {
     background-image: url('../images/Game-action8.jpg');
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    height: 100%;
-    width: 100%;
 }
 .carousel-inner .image9 {
     background-image: url('../images/Game-action9.jpg');
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    height: 100%;
-    width: 100%;
 }
 .carousel-inner .image10 {
     background-image:  url('../images/Game-action10.jpg');
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    height: 100%;
-    width: 100%;
 }
 .carousel-inner .image11 {
     background-image: url('../images/Game-action11.jpg');
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    height: 100%;
-    width: 100%;
 }
 .carousel-inner .image12 {
     background-image: url('../images/Game-action12.jpg');
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    height: 100%;
-    width: 100%;
 }
 .carousel-inner .image13 {
     background-image: url('../images/Game-action13.jpg');
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    height: 100%;
-    width: 100%;
 }
 .carousel-inner .image14 {
     background-image:  url('../images/Game-action14.jpg');
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    height: 100%;
-    width: 100%;
 }
 .carousel-inner .image15 {
     background-image: url('../images/Game-action15.jpg');
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    height: 100%;
-    width: 100%;
 }
+
+/*----------------------------Committee-----*/
+
+.main {
+    text-align: center;
+    background-color: #fafafa;
+    color: #14326a;
+    padding-bottom: 40px;
+}
+
+.committee-info {
+    border: 1px solid #14326a;
+    margin: 0px 60px;
+    padding-bottom: 20px;
+}
+
+.committee-info-top {
+    padding-top: 20px;
+}
+
 
 /*----------------------------Footer-----*/
 
@@ -243,6 +199,10 @@ body {
     min-height: 250px;
 }
 
+.footer-left a i {
+    color: #fafafa;
+}
+
 .game {
     margin: auto;
     width: 90%;
@@ -254,18 +214,29 @@ body {
     background-color: #fafafa;
 }
 
+.head-logo {
+    text-align: center;
+}
+
+.head-photo {
+    text-align: center;
+}
+
 .team-logo{
-    width: 50%;
-    margin: 0 auto;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    
+    width: 25%;
+    height: 25%;
+    padding: 10px;
 }
 
 .team-photo {
     width: 90%;
-    margin: 0 auto;
 }
+
+table tr, table th{
+    text-align: center;
+    border: 1px solid #000;
+}
+
 
 /*----------------------------Media Queries-----*/
 
