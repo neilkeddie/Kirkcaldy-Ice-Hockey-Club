@@ -87,6 +87,53 @@ body {
     background-color: #fafafa;
 }
 
+/*-------------------Marquee------*/
+
+
+.marquee {
+ height: 30px;	
+ overflow: hidden;
+ position: relative;
+}
+.marquee p {
+ font-size: 1.5em;
+ color: #14326a;
+ position: absolute;
+ width: 220%;
+ height: 30px;
+ margin: 0;
+ line-height: 30px;
+ text-align: left;
+ /* Starting position */
+ -moz-transform:translateX(100%);
+ -webkit-transform:translateX(100%);	
+ transform:translateX(100%);
+ /* Apply animation to this element */	
+ -moz-animation: marquee 40s linear infinite;
+ -webkit-animation: marquee 40s linear infinite;
+ animation: marquee 40s linear infinite;
+}
+/* Move it (define the animation) */
+@-moz-keyframes marquee {
+ 0%   { -moz-transform: translateX(100%); }
+ 100% { -moz-transform: translateX(-100%); }
+}
+@-webkit-keyframes marquee {
+ 0%   { -webkit-transform: translateX(100%); }
+ 100% { -webkit-transform: translateX(-100%); }
+}
+@keyframes marquee {
+ 0%   { 
+ -moz-transform: translateX(100%); /* Firefox bug fix */
+ -webkit-transform: translateX(100%); /* Firefox bug fix */
+ transform: translateX(100%); 		
+ }
+ 100% { 
+ -moz-transform: translateX(-100%); /* Firefox bug fix */
+ -webkit-transform: translateX(-100%); /* Firefox bug fix */
+ transform: translateX(-100%); 
+ }
+}
 /*--------------------------------Carousel--*/
 
 .home {
@@ -102,7 +149,7 @@ body {
 
 .carousel-inner .item {
     background-size: cover;
-    background-position: center center;
+    background-position: top center;
     background-repeat: no-repeat;
     height: 100%;
 }
@@ -162,13 +209,13 @@ body {
     padding-bottom: 40px;
 }
 
-.committee-info {
+.committee-info, .social-info {
     border: 1px solid #14326a;
     margin: 0px 60px;
     padding-bottom: 20px;
 }
 
-.committee-info-top {
+.committee-info-top, .social-info-top {
     padding-top: 20px;
 }
 
@@ -232,12 +279,50 @@ body {
     width: 90%;
 }
 
+table {
+    margin: auto;
+    width: 90%;
+    text-align: center;
+}
+
 table tr, table th{
     text-align: center;
     border: 1px solid #000;
 }
 
+/*--------------------------------Social---*/
 
+
+
+/*--------------------------------Sponsors---*/
+
+.logo-small a img{
+    padding: 10px 0px;
+    width: 40%;
+}
+
+/*--------------------------------Enquiry Form---*/
+
+.contact-form{ margin-top:15px;}
+.contact-form .textarea{ min-height:220px; resize:none;}
+.form-control{ box-shadow:none; border-color:#14236a; height:49px;}
+.form-control:focus{ box-shadow:none; border-color:#000050;}
+.form-control-feedback{ line-height:50px;}
+.form-group, .form-button {
+    padding: 10px 10px;
+}
+.main-btn{ 
+    background:#14236a; 
+    border-color:#fff; 
+    color:#fafafa;
+}
+.main-btn:hover{ 
+    background:#000050;
+    color:#fff;}
+.form-control-feedback {
+line-height: 50px;
+top: 0px;
+}
 /*----------------------------Media Queries-----*/
 
 @media (max-width: 992px) {
