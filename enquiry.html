@@ -9,7 +9,12 @@
     <link rel="stylesheet" href="styles/styles.css" type="text/css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="../scripts/script.js"></script>
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init("user_0HBe0pDjA3XtoWFtGjLJQ");
+        })();
+    </script>
     <title>Kirkcaldy Ice Hockey Club</title>
 </head>
 <body>
@@ -61,35 +66,16 @@
         <section>
             <div class="container-fluid main about">
                 <div class="row">
-                    <div class="col-xs-12 col-sm-12 col-md-12">
-                        <h2>Enquiry</h2>
-                        <form role="form" id="contact-form" class="contact-form">
-                            <div class="row">
-                		        <div class="col-md-6">
-                  		            <div class="form-group">
-                                        <input type="text" class="form-control" name="Name" autocomplete="off" id="Name" placeholder="Name">
-                  		            </div>
-                  	             </div>
-                    	        <div class="col-md-6">
-                  		            <div class="form-group">
-                                        <input type="email" class="form-control" name="email" autocomplete="off" id="email" placeholder="E-mail">
-                  		            </div>
-                  	            </div>
-                  	        </div>
-                  	        <div class="row">
-                  		        <div class="col-md-12">
-                  		            <div class="form-group">
-                                        <textarea class="form-control textarea" rows="3" name="Message" id="Message" placeholder="Message"></textarea>
-                  		            </div>
-                  	            </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="form-button">
-                                      <button type="submit" class="btn main-btn pull-right">Send a message</button>
-                                    </div>
-                                </div>
-                            </div>
+                    <div class="col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+                        <h2>Enquiry Form</h2>
+                        <form onsubmit="return sendMail(this);" method="POST" role="form" id="contact-form" class="contact-form">
+                            <input type="text" class="form-control" name="name" autocomplete="off" id="name" placeholder="Name">
+                            <br>
+                            <input type="email" class="form-control" name="email" autocomplete="off" id="email" placeholder="E-mail">
+                            <br>
+                            <textarea class="form-control textarea" rows="3" name="message" id="message" placeholder="Message"></textarea>
+                            <br>
+                            <button type="submit" class="btn main-btn pull-center">Send a message</button>
                         </form>
                     </div>
                 </div>
@@ -100,27 +86,24 @@
         <footer>
             <div class="container-fluid footer">
                 <div class="row">
-                    <div class="col-xs-12 col-sm-12 col-md-3 footer-section">
-                        <h3>Upcoming Games</h3>
-                    </div>
-                    <div class="col-xs-12 col-sm-12 col-md-3 footer-section footer-left">
+                    <div class="col-xs-12 col-sm-12 col-md-4 footer-section footer-left">
                         <h3>Facebook Feed</h3>
                         <iframe src="https://www.facebook.com/plugins/page.php?href=http%3A%2F%2Fwww.facebook.com%2FKirkcaldyicehockeyclub%2F&tabs=timeline&width=220&height=250&small_header=true&adapt_container_width=true&hide_cover=true&show_facepile=false&appId" width="220" height="250" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>                        
                     </div>
-                    <div class="col-xs-12 col-sm-12 col-md-3 footer-section footer-left">
+                    <div class="col-xs-12 col-sm-12 col-md-4 footer-section footer-left">
                         <h3>Recent Action</h3>
                         <div class="game">
                             <iframe width="100%" height="100%" src="https://www.youtube.com/embed/c70yJj-liU8" frameborder="0" allow="encrypted-media" allowfullscreen></iframe>
                         </div>
                     </div>
-                    <div class="col-xs-12 col-sm-12 col-md-3 footer-section footer-left">
+                    <div class="col-xs-12 col-sm-12 col-md-4 footer-section footer-left">
                         <h3>About</h3>
                         <p>Kirkcaldy Ice Hockey Club</p>
                         <p>Fife Ice Arena</p>
                         <p>Rosslyn Street</p>
                         <p>Kirkcaldy</p>
                         <br>
-                        <p>Email: info@kihc.org.uk <a href="mailto:chairman@kihc.scot"><i class="fa fa-envelope" aria-hidden="true"></i></a></p>
+                        <p>Email: info@kihc.org.uk <a href="mailto:info@kihc.org.uk"><i class="fa fa-envelope" aria-hidden="true"></i></a></p>
                         <ul class="list-inline social-links">
                             <li><a target="_blank" href="https://en-gb.facebook.com/Kirkcaldyicehockeyclub/"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
                             <li><a target="_blank" href="https://www.youtube.com/channel/UCA9WFDabesP-_uFNfnNmzBQ/featured"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
@@ -134,5 +117,5 @@
     </div>
   
 </body>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAAa4y7nhiyN6S4UvXkWlN6CxAxQDdyXYw&callback=myMap"></script>
+<script src="scripts/enquiry.js"></script>
 </html>

@@ -31,9 +31,28 @@
 /*-----------------------------Background------*/
 
 body {
-    background-image: url('/images/ice.jpg');
+    background-image: url('../images/ice.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.caricature {
+    position: relative;
+    min-height: 300px;
+}
+
+.caricature::after {
+    content: "";
+    background-image: url('../images/KIHC Mascot Player.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.2;
+    width: 100%;
+    height: 100%;
 }
 
 
@@ -99,7 +118,7 @@ body {
  font-size: 1.5em;
  color: #14326a;
  position: absolute;
- width: 220%;
+ width: 200%;
  height: 30px;
  margin: 0;
  line-height: 30px;
@@ -209,16 +228,72 @@ body {
     padding-bottom: 40px;
 }
 
-.committee-info, .social-info {
+.committee-info, .social-info, .home-info {
     border: 1px solid #14326a;
     margin: 0px 60px;
     padding-bottom: 20px;
 }
 
-.committee-info-top, .social-info-top {
+.committee-info-top, .social-info-top, .home-info-top {
     padding-top: 20px;
 }
+/*----------------------------Fixtures-----*/
 
+.dropbtn {
+    background-color: #000080;
+    color: white;
+    padding: 10px;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #000050;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.dropdown a {
+    background-color: #000080;
+    color: white;
+    padding: 10px 10px;
+    text-decoration: none;
+    
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #000080;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 2px 2px;
+    text-decoration: none;
+    display: block;
+    z-index: 1000;
+}
+
+table {
+    table-layout: fixed;
+    width: 100%;
+}
+
+td, th {
+    word-wrap: break-word;
+}
+
+.dropdown a:hover {background-color: #000050}
+
+.show {display:block;}
 
 /*----------------------------Footer-----*/
 
@@ -253,6 +328,12 @@ body {
 .game {
     margin: auto;
     width: 90%;
+}
+
+.upcoming-games {
+    list-style-type: none;
+    text-align: center;
+    padding-left: 0;
 }
 
 /*--------------------------------Teams---*/
@@ -292,6 +373,17 @@ table tr, table th{
 
 /*--------------------------------Social---*/
 
+.list-group a {
+    color: #14326a;
+    background-color: #fafafa; ;
+}
+
+
+
+.list-group a:hover{
+    color: #fafafa;
+    background-color: #14326a;
+}
 
 
 /*--------------------------------Sponsors---*/

@@ -7,9 +7,14 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
     <link rel="stylesheet" href="styles/styles.css" type="text/css" />
+    
+    <script type="text/javascript" src="scripts/d3.min.js"></script>
+    <script type="text/javascript" src="scripts/crossfilter.min.js"></script>
+    <script type="text/javascript" src="scripts/dc.min.js"></script>
+    <script type="text/javascript" src="scripts/queue.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="../scripts/script.js"></script>
+    
     <title>Kirkcaldy Ice Hockey Club</title>
 </head>
 <body>
@@ -63,6 +68,24 @@
                 <div class="row">
                     <div class="col-xs-12 col-sm-12 col-md-12">
                         <h2>Fixtures</h2>
+                        <li class="dropdown nav">
+                          <a class="dropdown-toggle team-fixtures" data-toggle="dropdown" href="#">Select Team<span class="caret"></span></a>
+                          <ul class="dropdown-menu">
+                                <li><a id="all">All</a></li>
+                                <li><a id="kubz">Kirkcaldy Kubz</a></li>
+                                <li><a id="eagles">Fife Eagles</a></li>
+                                <li><a id="redskins">Kirkcaldy Redskins</a></li>
+                                <li><a id="chiefs">Kirkcaldy Chiefs</a></li>
+                                <li><a id="flames">Fife Flames</a></li>
+                                <li><a id="falcons">Fife Falcons</a></li>
+                                <li><a id="kestrels">Kirkcaldy Kestrels</a></li>
+                          </ul>
+                        </li>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12">
+                        <div id="fixtures"></div>
                     </div>
                 </div>
             </div>    
@@ -72,27 +95,24 @@
         <footer>
             <div class="container-fluid footer">
                 <div class="row">
-                    <div class="col-xs-12 col-sm-12 col-md-3 footer-section">
-                        <h3>Upcoming Games</h3>
-                    </div>
-                    <div class="col-xs-12 col-sm-12 col-md-3 footer-section footer-left">
+                    <div class="col-xs-12 col-sm-12 col-md-4 footer-section footer-left">
                         <h3>Facebook Feed</h3>
                         <iframe src="https://www.facebook.com/plugins/page.php?href=http%3A%2F%2Fwww.facebook.com%2FKirkcaldyicehockeyclub%2F&tabs=timeline&width=220&height=250&small_header=true&adapt_container_width=true&hide_cover=true&show_facepile=false&appId" width="220" height="250" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>                        
                     </div>
-                    <div class="col-xs-12 col-sm-12 col-md-3 footer-section footer-left">
+                    <div class="col-xs-12 col-sm-12 col-md-4 footer-section footer-left">
                         <h3>Recent Action</h3>
                         <div class="game">
                             <iframe width="100%" height="100%" src="https://www.youtube.com/embed/c70yJj-liU8" frameborder="0" allow="encrypted-media" allowfullscreen></iframe>
                         </div>
                     </div>
-                    <div class="col-xs-12 col-sm-12 col-md-3 footer-section footer-left">
+                    <div class="col-xs-12 col-sm-12 col-md-4 footer-section footer-left">
                         <h3>About</h3>
                         <p>Kirkcaldy Ice Hockey Club</p>
                         <p>Fife Ice Arena</p>
                         <p>Rosslyn Street</p>
                         <p>Kirkcaldy</p>
                         <br>
-                        <p>Email: info@kihc.org.uk <a href="mailto:chairman@kihc.scot"><i class="fa fa-envelope" aria-hidden="true"></i></a></p>
+                        <p>Email: info@kihc.org.uk <a href="mailto:info@kihc.org.uk"><i class="fa fa-envelope" aria-hidden="true"></i></a></p>
                         <ul class="list-inline social-links">
                             <li><a target="_blank" href="https://en-gb.facebook.com/Kirkcaldyicehockeyclub/"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
                             <li><a target="_blank" href="https://www.youtube.com/channel/UCA9WFDabesP-_uFNfnNmzBQ/featured"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
@@ -104,7 +124,7 @@
             </div>
         </footer>
     </div>
-  
+      <script src="../scripts/fixtures.js"></script>
+      
 </body>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAAa4y7nhiyN6S4UvXkWlN6CxAxQDdyXYw&callback=myMap"></script>
 </html>
