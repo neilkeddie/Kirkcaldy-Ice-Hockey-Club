@@ -35,7 +35,8 @@ function show_fixtures(ndx, team) {
 	
      d3.csv("data/HockeyFixtures.csv", function(error, data) {
 		  if (error) throw error;
-		  
+
+		  console.log(data);
 		  var table = d3.select('#fixtures').append('table');
 		  var titles = d3.keys(data[0]);
 		  var headers = table.append('thead').append('tr')
