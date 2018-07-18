@@ -24,8 +24,19 @@
     margin-top: 200px;
 }
 
-.front-page p {
+.front-page {
     color: #fff;
+}
+
+.front-heading {
+    font-size: 40px;
+    color: #fefefe;
+}
+
+.front-link {
+    font-size: 26px;
+    text-decoration: none;
+    color: #fefefe;
 }
 
 /*-----------------------------Background------*/
