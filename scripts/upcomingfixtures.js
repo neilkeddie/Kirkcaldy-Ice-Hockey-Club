@@ -42,7 +42,7 @@ function find_fixtures(ndx, date) {
 		  var marqueeText;
 		  console.log(nextFixtures.length);
 		  if (nextFixtures.length < 1) {
-		    marqueeText += 'No Scheduled Fixtures this week';
+		    marqueeText = 'No Scheduled Fixtures this week';
 		  } else {
 		        marqueeText = 'This weeks fixtures: ';
 		        for (i=0;i < nextFixtures.length;i++) {
