@@ -39,12 +39,16 @@ function find_fixtures(ndx, date) {
     d3.csv("data/HockeyFixtures.csv", function(error, data) {
 		          
 		  findObjectByKey(data, 'date', secsToday, secsTodayPlus);
-		  console.log(nextFixtures);
-		  var marqueeText = 'This weeks fixtures: ';
-		  for (i=0;i < nextFixtures.length;i++) {
-		  console.log(nextFixtures[i].team);
-		  marqueeText += ('  '+nextFixtures[i].date+' '+nextFixtures[i].team+' v '+nextFixtures[i].opponents+' '+nextFixtures[i].where+' '+nextFixtures[i].time+'        ');
-		                                                    
+		  var marqueeText;
+		  console.log(nextFixtures.length);
+		  if (nextFixtures.length < 1) {
+		    marqueeText += 'No Scheduled Fixtures this week';
+		  } else {
+		        marqueeText = 'This weeks fixtures: ';
+		        for (i=0;i < nextFixtures.length;i++) {
+		            console.log(nextFixtures[i].team);
+		            marqueeText += ('  '+nextFixtures[i].date+' '+nextFixtures[i].team+' v '+nextFixtures[i].opponents+' '+nextFixtures[i].where+' '+nextFixtures[i].time+'        ');
+		        }
 		  }
 		  document.getElementById('marquee').innerHTML += ('<p>'+marqueeText+'</p>');            
 		 
