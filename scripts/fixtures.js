@@ -36,7 +36,6 @@ function show_fixtures(ndx, team) {
      d3.csv("data/HockeyFixtures.csv", function(error, data) {
 		  if (error) throw error;
 
-		  console.log(data);
 		  var table = d3.select('#fixtures').append('table');
 		  var titles = d3.keys(data[0]);
 		  var headers = table.append('thead').append('tr')
@@ -96,9 +95,18 @@ function show_fixtures(ndx, team) {
 		  }
 	$("th").css("text-transform","uppercase");
 	$("th").css("background-color","#ffff4d");
-	$("tr:odd>td").css("background-color","#14326a");
-	$("tr:odd>td").css("color","white");
-    $("tr:even>td").css("background-color","white",);
-    $("tr:even>td").css("color","#14326a");
-	  });
+
+		
+	$("tr").each(function() {
+		var col_val = $(this).find("td:eq(3)").text();
+    	if (col_val === "AWAY"){
+    		$(this).css("background-color","#14326a");
+    		$(this).css("color","white");
+    	} else {
+    		$(this).css("background-color","white",);
+		    $(this).css("color","#14326a");
+    	}
+	});
+
+	});
 }
