@@ -371,6 +371,11 @@ td, th {
     width: 90%;
 }
 
+.coaches {
+    width: 60%;
+    height: 60%;
+}
+
 table {
     margin: auto;
     width: 90%;
