@@ -7,7 +7,7 @@ queue()
     var today = new Date();
     var secsToday = today.getTime();
     var todayPlus = new Date();
-        todayPlus.setDate(todayPlus.getDate() + 6);
+        todayPlus.setDate(todayPlus.getDate() + 14);
     var secsTodayPlus = todayPlus.getTime();
     
     console.log(secsToday);
