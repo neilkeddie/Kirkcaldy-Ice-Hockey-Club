@@ -7,9 +7,12 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
     <link rel="stylesheet" href="styles/styles.css" type="text/css" />
+    <script type="text/javascript" src="scripts/d3.min.js"></script>
+    <script type="text/javascript" src="scripts/crossfilter.min.js"></script>
+    <script type="text/javascript" src="scripts/dc.min.js"></script>
+    <script type="text/javascript" src="scripts/queue.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="../scripts/script.js"></script>
     <title>Kirkcaldy Ice Hockey Club</title>
 </head>
 <body>
@@ -75,37 +78,36 @@
                 </div>
             </nav>
             <div class="container-fluid nav-below"></div>
-            <div id="marquee" class="container-fluid nav-below marquee"></div>
+            <div id="marquee" class="container-fluid nav-below marquee">
+            </div>
         </header>
+            
         <section>
-            <div class="container-fluid main">
+            <div class="container-fluid main about">
                 <div class="row">
-                    <div class="col-xs-12 col-sm-12 col-md-12 sponsors">
-                        <h2>Sponsors</h2>
-                        <p>A massive thanks goes to our main sponsors Farmer Autocare. The support we have received is truly appreciated
-                        amongst all the kids and coaches alike.</p>
-                        <br>
-                        <a target="_blank" href="https://www.farmerautocare.com"><img src="../sponsors/farmers logo.png" /></a>
-                        <div class="row sub-sponsors">
-                            <div class="col-xs-12 col-sm-6 col-md-6 logo-small">
-                                <a target="_blank" href=#><img src="../sponsors/gloves-off.png" /></a>    
-                            </div>
-                            <div class="col-xs-12 col-sm-6 col-md-6 logo-small">
-                                <a target="_blank" href=#><img src="../sponsors/branchingout.jpg" /></a>    
-                            </div>
-                        </div>
-                        <div class="row sub-sponsors">
-                            <div class="col-xs-12 col-sm-6 col-md-6 logo-small">
-                                <a target="_blank" href=#><img src="../sponsors/buffalo-farm.png" /></a>    
-                            </div>
-                            <div class="col-xs-12 col-sm-6 col-md-6 logo-small">
-                                <a target="_blank" href=#><img src="../sponsors/MKMsitelogo.png" /></a>    
-                            </div>
-                        </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12">
+                        <h2>KIHC Membership Details</h2>
+                        <div class="container-fluid main about">
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-2 col-md-2">
+                                </div>
+                                <div class="col-xs-12 col-sm-8 col-md-8">    
+                            
+                                <p>Kirkcaldy Ice Hockey Club invite anyone with an interest in the development of Ice Hockey in Fife to become a member of our club. For a payment of £15 you will become a member for season 2018/19, have the option to attend our AGM at the end of the season and also benefit from the various discounts that our sponsors and advertisers have generously provided to our Membership.</p>
+                                <br>
+                                <p>In addition you can keep yourself updated with what is happening in our Ice Hockey Club with details of our upcoming matches, social events and successes by visiting this page regularly.</p>
+                                <br>
+                                <p>Please complete this <a href="../data/KIHC-Membership-Form.docx" target="_blank" class="cv-pdf">form</a> and hand the form, passport sized photo and payment to any member of the KIHC team. You will be provided with a Membership Card which you present to receive the discounts detailed <a href="../data/KIHC-Membership-Benefits-2018.docx" target="_blank" class="cv-pdf">here</a>.</p>
+                                <br>
+                                </div>
+                                <div class="col-xs-12 col-sm-2 col-md-2">
+                                </div>
                     </div>
                 </div>
-            </div>    
-    <div class="container-fluid nav-below"></div>
+            </div>   
+                </div>
+            </div>
+            <div class="container-fluid nav-below"></div>
         
         </section>
         <footer>
@@ -140,7 +142,6 @@
             </div>
         </footer>
     </div>
-  
 </body>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAAa4y7nhiyN6S4UvXkWlN6CxAxQDdyXYw&callback=myMap"></script>
+
 </html>

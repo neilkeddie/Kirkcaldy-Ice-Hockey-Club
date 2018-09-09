@@ -44,11 +44,12 @@ function find_fixtures(ndx, date) {
 		  if (nextFixtures.length < 1) {
 		    marqueeText = 'No Scheduled Fixtures this week';
 		  } else {
-		        marqueeText = 'This weeks fixtures: ';
+		        marqueeText = 'Upcoming fixtures: ';
 		        for (i=0;i < nextFixtures.length;i++) {
 		            console.log(nextFixtures[i].team);
 		            marqueeText += ('  '+nextFixtures[i].date+' '+nextFixtures[i].team+' v '+nextFixtures[i].opponents+' '+nextFixtures[i].where+' '+nextFixtures[i].time+'        ');
 		        }
+		        marqueeText += '. For more up to date details check the KIHC Facebook page';
 		  }
 		  document.getElementById('marquee').innerHTML += ('<p>'+marqueeText+'</p>');            
 		 
