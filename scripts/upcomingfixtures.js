@@ -53,7 +53,7 @@ function find_fixtures(ndx, date) {
 	            console.log(nextFixtures[i].team);
 	            marqueeText += ('  '+nextFixtures[i].date+' '+nextFixtures[i].team+' v '+nextFixtures[i].opponents+' '+nextFixtures[i].where+' '+nextFixtures[i].time+'        ');
 	        }
-		  }
+		  } else { marqueeText =''; }
 
 		  findObjectByKey(data, 'date', secsToday, secsTodayPlus);
 		  console.log(nextFixtures.length);
