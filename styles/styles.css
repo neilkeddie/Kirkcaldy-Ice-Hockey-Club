@@ -407,6 +407,12 @@ table tr, table th{
 .logo-small a img{
     padding: 10px 0px;
     width: 40%;
+    text-decoration: none;
+}
+
+.logo-medium a img{
+    padding: 10px 0px;
+    width: 60%;
 }
 
 /*--------------------------------Enquiry Form---*/
