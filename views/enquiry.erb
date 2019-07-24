@@ -1,0 +1,20 @@
+<section>
+            <div class="container-fluid main about">
+                <div class="row">
+                    <div class="col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+                        <h2>Enquiry Form</h2>
+                        <form onsubmit="return sendMail(this);" method="POST" role="form" id="contact-form" class="contact-form">
+                            <input type="text" class="form-control" name="name" autocomplete="off" id="name" placeholder="Name">
+                            <br>
+                            <input type="email" class="form-control" name="email" autocomplete="off" id="email" placeholder="E-mail">
+                            <br>
+                            <textarea class="form-control textarea" rows="3" name="message" id="message" placeholder="Message"></textarea>
+                            <br>
+                            <button type="submit" class="btn main-btn pull-center">Send a message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>    
+    <div class="container-fluid nav-below"></div>
+</section>
+<script src="scripts/enquiry.js"></script>
