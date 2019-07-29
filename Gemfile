@@ -1,1 +1,1 @@
-require 'sinatra'
+gem "sinatra"
