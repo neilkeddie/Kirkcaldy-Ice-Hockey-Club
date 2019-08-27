@@ -12,4 +12,5 @@ gem 'spring',        group: :development
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :jruby]
 
 gem 'puma'
+gem 'pony'
 

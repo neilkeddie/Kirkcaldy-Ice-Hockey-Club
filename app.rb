@@ -1,4 +1,5 @@
 require 'sinatra'
+require 'pony'
 
 get '/' do
     erb :index, :layout => :indexLayout
@@ -22,6 +23,26 @@ end
 
 get '/enquiry' do
     erb :enquiry
+end
+
+post '/enquiry' do
+    Pony.mail({
+        :from => params[:email],
+        :to => 'info@kihc.org.uk',
+        :subject => params[:name] + " has contacted you via the Website",
+        :body => params[:message],
+        :via => :smtp,
+        :via_options => {
+         :address              => 'smtp.123-reg.co.uk',
+         :port                 => '587',
+         :enable_starttls_auto => true,
+         :user_name            => 'info@kihc.org.uk',
+         :password             => 'Kihc2018$',
+         :authentication       => :plain,
+         :domain               => "localhost.localdomain"
+         }
+        })
+        erb :enquiry_submitted
 end
 
 get '/fixtures' do
