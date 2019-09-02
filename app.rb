@@ -33,11 +33,11 @@ post '/enquiry' do
         :body => params[:message],
         :via => :smtp,
         :via_options => {
-         :address              => 'smtp.123-reg.co.uk',
-         :port                 => '587',
+         :address              => $smtp_address,
+         :port                 => $smtp_port,
          :enable_starttls_auto => true,
-         :user_name            => 'info@kihc.org.uk',
-         :password             => 'Kihc2018$',
+         :user_name            => $smtp_username,
+         :password             => $smtp_password,
          :authentication       => :plain,
          :domain               => "localhost.localdomain"
          }
