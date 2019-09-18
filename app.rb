@@ -46,11 +46,11 @@ post '/enquiry' do
 end
 
 get '/fixtures' do
-    erb :fixtures
+    erb :fixtures, :layout => :fixturesLayout
 end
 
 get '/fixtures-201819' do
-    erb :fixtures201819
+    erb :fixtures201819, :layout => :fixturesLayout
 end
 
 get '/hockeyuk' do

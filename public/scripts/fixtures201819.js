@@ -9,14 +9,14 @@ function showFixtures(error, team) {
     
     var ndx = crossfilter(team);
 	show_fixtures(ndx, "All");
-	document.getElementById("all").onclick = function() {$("#fixtures201819").empty();show_fixtures(ndx, "All")};
-	document.getElementById("kubz").onclick = function() {$("#fixtures201819").empty();show_fixtures(ndx, "KUBZ")};
-	document.getElementById("eagles").onclick = function() {$("#fixtures201819").empty();show_fixtures(ndx, "EAGLES")};
-	document.getElementById("redskins").onclick = function() {$("#fixtures201819").empty();show_fixtures(ndx, "REDSKINS")};
-	document.getElementById("chiefs").onclick = function() {$("#fixtures201819").empty();show_fixtures(ndx, "CHIEFS")};
-	document.getElementById("flames").onclick = function() {$("#fixtures201819").empty();show_fixtures(ndx, "FLAMES")};
-	document.getElementById("falcons").onclick = function() {$("#fixtures201819").empty();show_fixtures(ndx, "FALCONS")};
-	document.getElementById("kestrels").onclick = function() {$("#fixtures201819").empty();show_fixtures(ndx, "KESTRELS")};
+	document.getElementById("all201819").onclick = function() {$("#fixtures201819").empty();show_fixtures(ndx, "All")};
+	document.getElementById("kubz201819").onclick = function() {$("#fixtures201819").empty();show_fixtures(ndx, "KUBZ")};
+	document.getElementById("eagles201819").onclick = function() {$("#fixtures201819").empty();show_fixtures(ndx, "EAGLES")};
+	document.getElementById("redskins201819").onclick = function() {$("#fixtures201819").empty();show_fixtures(ndx, "REDSKINS")};
+	document.getElementById("chiefs201819").onclick = function() {$("#fixtures201819").empty();show_fixtures(ndx, "CHIEFS")};
+	document.getElementById("flames201819").onclick = function() {$("#fixtures201819").empty();show_fixtures(ndx, "FLAMES")};
+	document.getElementById("falcons201819").onclick = function() {$("#fixtures201819").empty();show_fixtures(ndx, "FALCONS")};
+	document.getElementById("kestrels201819").onclick = function() {$("#fixtures201819").empty();show_fixtures(ndx, "KESTRELS")};
     dc.renderAll();
 }
 
