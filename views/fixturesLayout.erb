@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
+    <link rel="stylesheet" href="css/styles.css" type="text/css" />
+    <script type="text/javascript" src="scripts/d3.min.js"></script>
+    <script type="text/javascript" src="scripts/crossfilter.min.js"></script>
+    <script type="text/javascript" src="scripts/dc.min.js"></script>
+    <script type="text/javascript" src="scripts/queue.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <title>Kirkcaldy Ice Hockey Club</title>
+</head>
+<body>
+    <div class="container main-wrap">
+        <header>
+            <nav class="navbar ">
+                <div class="container home-bar">
+                    <div class="navbar-header">
+                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand" href="#"><img alt="Kirkcaldy Ice Hockey Club Logo" src="images/KIHC-Logo.png" /></a>
+                </div>
+                    <div class="collapse navbar-collapse" id="myNavbar">
+                  <ul class="nav navbar-nav navbar-right">
+                <li class="active"><a href="../home">Home</a></li>
+                <li class="dropdown">
+                  <a class="dropdown-toggle" data-toggle="dropdown" href="#">Teams<span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="../kubz">Kirkcaldy Kubz</a></li>
+                    <li><a href="../eagles">Fife Eagles</a></li>
+                    <li><a href="../redskins">Kirkcaldy Redskins</a></li>
+                    <li><a href="../chiefs">Kirkcaldy Chiefs</a></li>
+                    <li><a href="../flames">Fife Flames</a></li>
+                    <li><a href="../falcons">Fife Falcons</a></li>
+                    <li><a href="../kestrels">Kirkcaldy Kestrels</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a class="dropdown-toggle" data-toggle="dropdown" href="#">Fixtures<span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="../fixtures">Current Season</a></li>
+                    <li><a href="../fixtures-201819">2018/19</a></li>
+                  </ul>
+                </li>
+                <li><a href="../hockeyuk">Hockey UK</a></li>
+                <li class="dropdown">
+                  <a class="dropdown-toggle" data-toggle="dropdown" href="#">Club Info<span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="../awards">Annual Awards</a></li>
+                    <li><a href="../about">About KIHC</a></li>
+                    <li><a href="../data/Code-of-conduct.pdf" target="_blank" class="cv-pdf">Code of Conduct</a></li>
+                    <li><a href="../where">Where to find us</a></li>
+                    <li><a href="../committee">Committee</a></li>
+                    <li><a href="../social">Social Links</a></li>
+                  </ul>
+                <li class="dropdown">
+                      <a class="dropdown-toggle" data-toggle="dropdown" href="#">Forms<span class="caret"></span></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="../enquiry">Enquiry Form</a></li>
+                        <li><a href="../data/Junior-registration.doc" target="_blank" class="cv-pdf">Junior Registration</a></li>
+                        <li><a href="../data/Senior-registration.doc" target="_blank" class="cv-pdf">Senior Registration</a></li>
+                        <li><a href="../data/Medical-Consent-Form.pdf" target="_blank" class="cv-pdf">Medical Consent</a></li>
+                      </ul>
+                </li>
+                <li class="dropdown">
+                      <a class="dropdown-toggle" data-toggle="dropdown" href="#">KIHC Membership<span class="caret"></span></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="../members">KIHC Membership Details</a></li>
+                        <li><a href="../data/KIHC-Membership-Benefits-2018.docx" target="_blank" class="cv-pdf">KIHC Memership Benefits</a></li>
+                        <li><a href="../data/KIHC-Membership-Form.doc" target="_blank" class="cv-pdf">KIHC Membership Form</a></li>
+                      </ul>
+                </li>
+                <li><a href="../sponsors">Corporate Partners</a></li>
+              </ul>
+                </div>
+                </div>
+            </nav>
+            <div class="container-fluid nav-below"></div>
+            <div id="marquee" class="container-fluid nav-below marquee">
+            </div>
+        </header>
+            <%= yield %>
+        <footer>
+            <div class="container-fluid footer">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-4 footer-section footer-left">
+                        <h3>Facebook Feed</h3>
+                        <iframe src="https://www.facebook.com/plugins/page.php?href=http%3A%2F%2Fwww.facebook.com%2FKirkcaldyicehockeyclub%2F&tabs=timeline&width=220&height=250&small_header=true&adapt_container_width=true&hide_cover=true&show_facepile=false&appId" width="220" height="250" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-4 footer-section footer-left">
+                        <h3>Recent Action</h3>
+                        <div class="game">
+                            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/c70yJj-liU8" frameborder="0" allow="encrypted-media" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-4 footer-section footer-left">
+                        <h3>About</h3>
+                        <p>Kirkcaldy Ice Hockey Club</p>
+                        <p>Fife Ice Arena</p>
+                        <p>Rosslyn Street</p>
+                        <p>Kirkcaldy</p>
+                        <br>
+                        <p>Email: info@kihc.org.uk <a href="mailto:info@kihc.org.uk"><i class="fa fa-envelope" aria-hidden="true"></i></a></p>
+                        <ul class="list-inline social-links">
+                            <li><a target="_blank" href="https://en-gb.facebook.com/Kirkcaldyicehockeyclub/"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                            <li><a target="_blank" href="https://www.youtube.com/channel/UCA9WFDabesP-_uFNfnNmzBQ/featured"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
+                            <li><a target="_blank" href="https://www.flickr.com/photos/fifeicehockey/"><i class="fa fa-flickr" aria-hidden="true"></i></a></li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
