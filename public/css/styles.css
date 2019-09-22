@@ -306,6 +306,10 @@ td, th {
 
 .show {display:block;}
 
+.fixtures {
+    min-height: 200px;
+}
+
 /*----------------------------Footer-----*/
 
 .footer {
