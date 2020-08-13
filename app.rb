@@ -53,6 +53,10 @@ get '/fixtures-201819' do
     erb :fixtures201819, :layout => :fixturesLayout
 end
 
+get '/fixtures-201920' do
+    erb :fixtures201920, :layout => :fixturesLayout
+end
+
 get '/hockeyuk' do
     erb :hockeyuk
 end
